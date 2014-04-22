@@ -1,1 +1,4 @@
 bottle
+requests
+gunicorn
+ipdb

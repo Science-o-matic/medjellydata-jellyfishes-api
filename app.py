@@ -1,10 +1,11 @@
-from bottle import get, run, template, abort
-import settings
+from bottle import template, abort, run, Bottle
 from jellyfishes_info import jellyfish_info
 from api import MedJellyAPI
+import settings
 
+app = Bottle()
 
-@get('/<lang>/<beach:path>')
+@app.get('/<lang>/<beach:path>')
 def api(lang, beach):
     jellyfishes = []
 
@@ -19,4 +20,6 @@ def api(lang, beach):
 
     return {'jellyfishes': jellyfishes}
 
-run(host='localhost', port=8080, debug=True, reloader=True)
+
+if __name__ == "__main__":
+    run(host='localhost', app=app, port=8080, debug=True, reloader=True)

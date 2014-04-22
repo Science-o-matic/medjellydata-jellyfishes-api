@@ -8,7 +8,7 @@ class MedJellyAPI:
 
     @staticmethod
     def jellyfishes_by_beach(beach_id):
-        """ Fake method returning random jellyfishes list ""
+        """ Fake method returning random jellyfishes list """
         jellyfishes = []
         for n in range(random.randrange(1, 3)):
             jelly = {
