@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+IMG_URL = 'http://api.medjellydata.com/static/img/'
 MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws/'
+
 
 LANGUAGES = ('es_ES',)
 
