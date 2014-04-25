@@ -1,4 +1,4 @@
-from bottle import template, abort, run, Bottle
+from bottle import template, abort, run, response, Bottle
 from jellyfishes_info import jellyfish_info
 from api import MedJellyAPI
 import settings
@@ -18,6 +18,7 @@ def api(lang, beach):
     for jelly in jelly_risk:
         jellyfishes.append(jellyfish_info(lang, jelly))
 
+    response.set_header("Access-Control-Allow-Origin", "*")
     return {'jellyfishes': jellyfishes}
 
 
