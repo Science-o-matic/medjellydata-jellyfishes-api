@@ -1,11 +1,13 @@
 from es_ES import jellyfishes as jellyfishes_es_ES
 from ca_ES import jellyfishes as jellyfishes_ca_ES
+from en_EN import jellyfishes as jellyfishes_en_EN
 from settings import RISK_LEVELS
 
 
 JELLYFISHES = {
     'es_ES': jellyfishes_es_ES.JELLYFISHES,
     'ca_ES': jellyfishes_ca_ES.JELLYFISHES,
+    'en_EN': jellyfishes_en_EN.JELLYFISHES,
 }
 
 def jellyfish_info(lang, jellyfish):

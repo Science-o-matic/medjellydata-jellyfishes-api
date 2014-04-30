@@ -3,7 +3,7 @@ IMG_URL = 'http://api.medjellydata.com/static/img/'
 MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws/'
 
 
-LANGUAGES = ('es_ES', 'ca_ES')
+LANGUAGES = ('es_ES', 'ca_ES', 'en_EN')
 
 # Beaches paths and its correspoding MedJelly API id
 BEACHES = {
@@ -88,7 +88,6 @@ BEACHES = {
     "malgratmar/tordera": 118,
     "malgratmar/malgratcentre": 119,
     "malgratmar/astillero": 120,
-    #"santasusanna/santasusanna": 121,
     "pinedamar/pins": 122,
     "pinedamar/poblenou": 123,
     "calella/grancalella": 124,
@@ -240,14 +239,17 @@ RISK_LEVELS = {
     NO_RISK: {
         'es_ES': 'Presencia de Medusas SIN peligro',
         'ca_ES': 'Presència de Meduses SENSE perill',
+        'en_EN': 'Jellyfish Presence with NO risk',
         },
     RISK: {
         'es_ES': 'Presencia de Medusas CON peligro',
         'ca_ES': 'Presència de Meduses AMB perill',
+        'en_EN': 'Jellyfish Presence WITH risk',
         },
     HIGH_RISK: {
         'es_ES': 'Presencia de Medusas ALTO peligro',
-        'ca_ES': 'Presència de Meduses d’ALT PERILL'
+        'ca_ES': 'Presència de Meduses d’ALT PERILL',
+        'en_EN': 'Jellyfish Presence with HIGH risk',
     },
 }
 
@@ -259,6 +261,10 @@ SOURCE_NOTES = {
     'ca_ES': """
 Nota: Tota la informació ha estat validada per l'Institut de Ciències del Mar –CSIC de Barcelona a través de la col·laboració entre l'Agència Catalana de l'Aigua i el Projecte Europeu MED-JELLYRISK. Per més informació sobre MEDUSES, visita la web del projecte www.jellyrisk.eu o descarrega la App iMedjelly (Descàrrega gratuïta per iPhone i Android).
 """,
+    'en_EN': """
+Nte: All the information has been validated by the Institute of Marine Sciences – CSIC in Barcelona, through a collaboration between the Catalan Water Agency and the Europena Project MED-
+JELLYRISK. For more information about JELLYFISH visit the project’s website www.jellyrisk.eu or download the iMedjelly App (Free download for iPhona and Android).
+"""
 }
 
 
