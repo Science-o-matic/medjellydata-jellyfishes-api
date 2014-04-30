@@ -3,7 +3,7 @@ IMG_URL = 'http://api.medjellydata.com/static/img/'
 MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws/'
 
 
-LANGUAGES = ('es_ES',)
+LANGUAGES = ('es_ES', 'ca_ES')
 
 # Beaches paths and its correspoding MedJelly API id
 BEACHES = {
@@ -239,12 +239,15 @@ HIGH_RISK = 3
 RISK_LEVELS = {
     NO_RISK: {
         'es_ES': 'Presencia de Medusas SIN peligro',
+        'ca_ES': 'Presència de Meduses SENSE perill',
         },
     RISK: {
         'es_ES': 'Presencia de Medusas CON peligro',
+        'ca_ES': 'Presència de Meduses AMB perill',
         },
     HIGH_RISK: {
-        'es_ES': 'Presencia de Medusas ALTO peligro'
+        'es_ES': 'Presencia de Medusas ALTO peligro',
+        'ca_ES': 'Presència de Meduses d’ALT PERILL'
     },
 }
 
@@ -252,7 +255,10 @@ SOURCE_NOTES = {
     'es_ES': """
 <p>Nota: Toda la información ha sido validada por el Instituto de Ciencias del Mar –CSIC de Barcelona a través de la colaboración entre la Agencia Catalana del Agua y el Proyecto Europeo MED-JELLYRISK.</p>
 <p>Para más información sobre MEDUSAS visitar la web del proyecto www.jellyrisk.eu o descarga la App iMedjelly (Descarga gratuita para iPhone y Android).</p>
-"""
+""",
+    'ca_ES': """
+Nota: Tota la informació ha estat validada per l'Institut de Ciències del Mar –CSIC de Barcelona a través de la col·laboració entre l'Agència Catalana de l'Aigua i el Projecte Europeu MED-JELLYRISK. Per més informació sobre MEDUSES, visita la web del projecte www.jellyrisk.eu o descarrega la App iMedjelly (Descàrrega gratuïta per iPhone i Android).
+""",
 }
 
 
