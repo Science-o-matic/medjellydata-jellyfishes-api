@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
+MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws'
+MEDJELLY_API_USER = 'medusas'
+MEDJELLY_API_PASSWORD = 'BBFKb8S122R31'
+DEVICE_ID = 'a2efd234324fda233'
 IMG_URL = 'http://api.medjellydata.com/static/img/'
-MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws/'
 
 
 LANGUAGES = ('es_ES', 'ca_ES', 'en_EN')
@@ -231,22 +234,18 @@ BEACHES = {
     "alcanar/marjal": 243
     }
 
-NO_RISK = 1
-RISK = 2
-HIGH_RISK = 3
-
 RISK_LEVELS = {
-    NO_RISK: {
+    "LOW_WARNING": {
         'es_ES': 'Presencia de Medusas SIN peligro',
         'ca_ES': 'Presència de Meduses SENSE perill',
         'en_EN': 'Jellyfish Presence with NO risk',
         },
-    RISK: {
+    "HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas CON peligro',
         'ca_ES': 'Presència de Meduses AMB perill',
         'en_EN': 'Jellyfish Presence WITH risk',
         },
-    HIGH_RISK: {
+    "VERY_HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas ALTO peligro',
         'ca_ES': 'Presència de Meduses d’ALT PERILL',
         'en_EN': 'Jellyfish Presence with HIGH risk',
@@ -370,3 +369,9 @@ JELLYFISHES = {
         'danger_level': {},
          }
     }
+
+
+try:
+    import local_settings
+except:
+    raise Warning("No local_settings.py file found!")

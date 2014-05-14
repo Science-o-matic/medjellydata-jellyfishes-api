@@ -10,16 +10,11 @@ JELLYFISHES = {
     'en_EN': jellyfishes_en_EN.JELLYFISHES,
 }
 
+
 def jellyfish_info(lang, jellyfish):
     jellyfish_id = jellyfish['id']
-    risk_level = jellyfish['risk_level']
+    risk_level = jellyfish['status']
     jelly = JELLYFISHES[lang][jellyfish_id]
-
-    try:
-        jelly['risk_description'][risk_level]
-    except KeyError:
-        risk_level = jelly['risk_description'].keys()[0]
-
 
     return {
         'scientific_name': jelly['scientific_name'],

@@ -1,6 +1,6 @@
 from bottle import template, abort, run, response, Bottle
 from jellyfishes_info import jellyfish_info
-from api import MedJellyAPI
+from api import jellyfishes_by_beach
 import settings
 
 app = Bottle()
@@ -14,8 +14,8 @@ def api(lang, beach):
     if beach not in settings.BEACHES:
         abort(404, "Beach %s is not found" % beach)
 
-    jelly_risk = MedJellyAPI.jellyfishes_by_beach(settings.BEACHES[beach])
-    for jelly in jelly_risk:
+    jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
+    for jelly in jellyfishesHazard:
         jellyfishes.append(jellyfish_info(lang, jelly))
 
     response.set_header("Access-Control-Allow-Origin", "*")
