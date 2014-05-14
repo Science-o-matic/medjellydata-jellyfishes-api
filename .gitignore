@@ -55,3 +55,6 @@ docs/_build/
 # Temporary files
 \#*#
 *.*~
+
+# Local settings
+local_settings.py
