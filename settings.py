@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 MEDJELLY_API_BASE_URL = 'https://app.bahiasoftware.es/MEDUSAS/ws'
-MEDJELLY_API_USER = 'medusas'
-MEDJELLY_API_PASSWORD = 'BBFKb8S122R31'
-DEVICE_ID = 'a2efd234324fda233'
+DEVICE_ID = 'medjellydata-jellyfishes-api'
 IMG_URL = 'http://api.medjellydata.com/static/img/'
 
 
@@ -267,111 +265,7 @@ JELLYRISK. For more information about JELLYFISH visit the project’s website ww
 }
 
 
-
-# Jellyfishes by MedJelly API id
-JELLYFISHES = {
-    1: {'name': 'Pelagia noctiluca',
-        # Danger level by specimen quantity
-        'danger_level': {
-            1: 4,
-            2: 5,
-            3: 5
-            }
-        },
-    2: {'name': 'Rhizostoma pulmo',
-        'danger_level': {
-            1: 3,
-            2: 4,
-            3: 4
-            }
-        },
-    3: {'name': 'Aequorea forskalea',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            }
-        },
-    4: {'name': 'Cotylorhiza tuberculata',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    5: {'name': 'Velella velella',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    6: {'name': 'Aurelia aurita',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    7: {'name': 'Chrysaora hysoscella',
-        'danger_level': {
-            1: 4,
-            2: 5,
-            3: 5
-            },
-        },
-    8: {'name': 'Porpita porpita',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    9: {'name': 'Carybdea marsupialis',
-        'danger_level': {
-            1: 4,
-            2: 5,
-            3: 5
-            },
-        },
-    10: {'name': 'Physalia physalis',
-        'danger_level': {
-            1: 5,
-            2: 5,
-            3: 5
-            },
-        },
-    11: {'name': 'Olindias phosphorica',
-        'danger_level': {
-            1: 4,
-            2: 5,
-            3: 5
-            },
-        },
-    12: {'name': 'Mnemiopsis leidyi',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    13: {'name': 'Phyllorhiza punctata',
-        'danger_level': {
-            1: 3,
-            2: 3,
-            3: 3
-            },
-        },
-    14: {'name': 'Cassiopea andromeda',
-        'danger_level': {},
-        },
-    15: {'name': 'Salpa',
-        'danger_level': {},
-         }
-    }
-
-
 try:
-    import local_settings
+    from local_settings import *
 except:
     raise Warning("No local_settings.py file found!")
