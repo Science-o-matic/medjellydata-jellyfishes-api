@@ -12,7 +12,7 @@ JELLYFISHES = {
 
 
 def jellyfish_info(lang, jellyfish):
-    jellyfish_id = jellyfish['id']
+    jellyfish_id = jellyfish['jellyFishId']
     risk_level = jellyfish['status']
     jelly = JELLYFISHES[lang][jellyfish_id]
 

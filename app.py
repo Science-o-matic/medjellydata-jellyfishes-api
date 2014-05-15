@@ -7,13 +7,12 @@ app = Bottle()
 
 @app.get('/<lang>/<beach:path>')
 def api(lang, beach):
-    jellyfishes = []
-
     if lang not in settings.LANGUAGES:
         abort(400, "Invalid language code: %s" % lang)
     if beach not in settings.BEACHES:
         abort(404, "Beach %s is not found" % beach)
 
+    jellyfishes = []
     jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
     for jelly in jellyfishesHazard:
         jellyfishes.append(jellyfish_info(lang, jelly))
