@@ -4,7 +4,7 @@ DEVICE_ID = 'medjellydata-jellyfishes-api'
 IMG_URL = 'http://api.medjellydata.com/static/img/'
 
 
-LANGUAGES = ('es_ES', 'ca_ES', 'en_EN')
+LANGUAGES = ('es_ES', 'ca_ES', 'en_EN', 'de_DE', 'fr_FR', 'it_IT', 'ru_RU')
 
 # Beaches paths and its correspoding MedJelly API id
 BEACHES = {
@@ -237,16 +237,19 @@ RISK_LEVELS = {
         'es_ES': 'Presencia de Medusas SIN peligro',
         'ca_ES': 'Presència de Meduses SENSE perill',
         'en_EN': 'Jellyfish Presence with NO risk',
+        'de_DE': 'Vorhandensein von Quallen OHNE Gefährdung',
         },
     "HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas CON peligro',
         'ca_ES': 'Presència de Meduses AMB perill',
         'en_EN': 'Jellyfish Presence WITH risk',
+        'de_DE': 'Vorhandensein von Quallen MIT Gefährdung',
         },
     "VERY_HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas ALTO peligro',
         'ca_ES': 'Presència de Meduses d’ALT PERILL',
         'en_EN': 'Jellyfish Presence with HIGH risk',
+        'de_DE': 'Vorhandensein von Quallen MIT STARKER Gefährdung',
     },
 }
 
@@ -261,6 +264,10 @@ Nota: Tota la informació ha estat validada per l'Institut de Ciències del Mar 
     'en_EN': """
 Nte: All the information has been validated by the Institute of Marine Sciences – CSIC in Barcelona, through a collaboration between the Catalan Water Agency and the Europena Project MED-
 JELLYRISK. For more information about JELLYFISH visit the project’s website www.jellyrisk.eu or download the iMedjelly App (Free download for iPhona and Android).
+""",
+    'de_DE': """
+Hinweis: Die Inhalte wurden vom Institut für Meereswissenschaft von Barcelona (CSIC) in Zusammenarbeit mit der katalanischen Wasseragentur ACA im Rahmen des europäischen Projekts MED-JELLYRISK geprüft. Ausführlichere Informationen zu Quallen finden Sie auf der Website des Projekts www.jellyrisk.eu
+oder in der App iMedjelly (kostenloser Download für iPhone und Android).
 """
 }
 

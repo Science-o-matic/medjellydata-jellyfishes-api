@@ -1,14 +1,10 @@
-from es_ES import jellyfishes as jellyfishes_es_ES
-from ca_ES import jellyfishes as jellyfishes_ca_ES
-from en_EN import jellyfishes as jellyfishes_en_EN
-from settings import RISK_LEVELS
+from importlib import import_module
+from settings import LANGUAGES, RISK_LEVELS
 
 
-JELLYFISHES = {
-    'es_ES': jellyfishes_es_ES.JELLYFISHES,
-    'ca_ES': jellyfishes_ca_ES.JELLYFISHES,
-    'en_EN': jellyfishes_en_EN.JELLYFISHES,
-}
+JELLYFISHES = {}
+for lang in LANGUAGES:
+    JELLYFISHES[lang] = import_module('jellyfishes_info.%s.jellyfishes' % lang).JELLYFISHES
 
 
 def jellyfish_info(lang, jellyfish):
