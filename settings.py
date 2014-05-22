@@ -240,6 +240,7 @@ RISK_LEVELS = {
         'de_DE': 'Vorhandensein von Quallen OHNE Gefährdung',
         'fr_FR': 'Présence de méduses ne représentant PAS DE DANGER',
         'it_IT': 'Presenza di meduse NON pericolose',
+        'ru_RU': 'Встречаются БЕЗОПАСНЫЕ медузы',
         },
     "HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas CON peligro',
@@ -248,6 +249,7 @@ RISK_LEVELS = {
         'de_DE': 'Vorhandensein von Quallen MIT Gefährdung',
         'fr_FR': 'Présence de méduses représentant un DANGER',
         'it_IT': 'Presenza di meduse PERICOLOSE',
+        'ru_RU': 'Встречаются ОПАСНЫЕ медузы',
         },
     "VERY_HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas ALTO peligro',
@@ -256,6 +258,7 @@ RISK_LEVELS = {
         'de_DE': 'Vorhandensein von Quallen MIT STARKER Gefährdung',
         'fr_FR': 'Présence de méduses représentant un DANGER IMPORTANT',
         'it_IT': 'Presenza di meduse ALTAMENTE pericolose',
+        'ru_RU': 'Встречаются ОЧЕНЬ ОПАСНЫЕ медузы',
     },
 }
 
@@ -281,7 +284,10 @@ Pour en savoir plus sur les MÉDUSES, veuillez consulter le site Internet du pro
 """,
     'it_IT': """
 Nota: Tutte le informazioni sono verificate dall’Istituto di Scienze marine – CSIC di Barcellona tramite la collaborazione con l’Agenzia catalana dell’acqua e il Progetto europeo MED-JELLYRISK. Per ulteriori informazioni sulle MEDUSE, visitate la pagina web del progetto www.jellyrisk.eu o scarica la App iMedjelly (download gratuito per iPhone e Android).
-"""
+""",
+    'ru_RU': """
+Примечание: Информация была проверена и одобрена Институтом морских исследований CSIC Барселоны в рамках сотрудничества Каталонского агентства воды и Европейского проекта MED-JELLYRISK. Для получения более подробной информации зайдите на страницу проекта www.jellyrisk.eu или скачайте мобильное приложение iMedjelly (бесплатно для iPhone и Android).
+""",
 }
 
 
