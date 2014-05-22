@@ -238,18 +238,24 @@ RISK_LEVELS = {
         'ca_ES': 'Presència de Meduses SENSE perill',
         'en_EN': 'Jellyfish Presence with NO risk',
         'de_DE': 'Vorhandensein von Quallen OHNE Gefährdung',
+        'fr_FR': 'Présence de méduses ne représentant PAS DE DANGER',
+        'it_IT': 'Presenza di meduse NON pericolose',
         },
     "HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas CON peligro',
         'ca_ES': 'Presència de Meduses AMB perill',
         'en_EN': 'Jellyfish Presence WITH risk',
         'de_DE': 'Vorhandensein von Quallen MIT Gefährdung',
+        'fr_FR': 'Présence de méduses représentant un DANGER',
+        'it_IT': 'Presenza di meduse PERICOLOSE',
         },
     "VERY_HIGH_WARNING": {
         'es_ES': 'Presencia de Medusas ALTO peligro',
         'ca_ES': 'Presència de Meduses d’ALT PERILL',
         'en_EN': 'Jellyfish Presence with HIGH risk',
         'de_DE': 'Vorhandensein von Quallen MIT STARKER Gefährdung',
+        'fr_FR': 'Présence de méduses représentant un DANGER IMPORTANT',
+        'it_IT': 'Presenza di meduse ALTAMENTE pericolose',
     },
 }
 
@@ -268,6 +274,13 @@ JELLYRISK. For more information about JELLYFISH visit the project’s website ww
     'de_DE': """
 Hinweis: Die Inhalte wurden vom Institut für Meereswissenschaft von Barcelona (CSIC) in Zusammenarbeit mit der katalanischen Wasseragentur ACA im Rahmen des europäischen Projekts MED-JELLYRISK geprüft. Ausführlichere Informationen zu Quallen finden Sie auf der Website des Projekts www.jellyrisk.eu
 oder in der App iMedjelly (kostenloser Download für iPhone und Android).
+""",
+    'fr_FR': """
+Remarque : Toute les informations ont été validées par l’Institut des sciences de la mer - Conseil supérieur de la recherche scientifique de Barcelone (CSIC) par le biais de la collaboration entre l’Agence catalane de l’eau et le projet européen MED-JELLYRISK.
+Pour en savoir plus sur les MÉDUSES, veuillez consulter le site Internet du projet www.jellyrisk.eu ou télécharger l’App iMedjelly (téléchargement gratuit sur iPhone et Android).
+""",
+    'it_IT': """
+Nota: Tutte le informazioni sono verificate dall’Istituto di Scienze marine – CSIC di Barcellona tramite la collaborazione con l’Agenzia catalana dell’acqua e il Progetto europeo MED-JELLYRISK. Per ulteriori informazioni sulle MEDUSE, visitate la pagina web del progetto www.jellyrisk.eu o scarica la App iMedjelly (download gratuito per iPhone e Android).
 """
 }
 

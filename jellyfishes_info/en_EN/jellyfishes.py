@@ -27,7 +27,7 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 1 (Jellyfish Presence with NO risk)
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 1 (Jellyfish Presence with NO risk)</p>
 """,
             "HIGH_WARNING": """
 <p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
