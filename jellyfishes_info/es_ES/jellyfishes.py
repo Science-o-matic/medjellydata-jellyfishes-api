@@ -11,10 +11,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Pelagia noctiluca es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría 1 (<1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).</p>
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Pelagia noctiluca es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Pelagia noctiluca es considerada una especie MUY urticante y debido a que su abundancia es de categoría 2 (>1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Pelagia noctiluca es considerada una especie MUY urticante y debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).
 """
             },
         },
@@ -27,11 +27,11 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Rhizostoma pulmo es considerada una especie URTICANTE, pero debido a que su abundancia es de categoría 1 (<1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es de nivel 1 (Presencia de Medusas SIN Peligro).
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Rhizostoma pulmo es considerada una especie URTICANTE, pero debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es de nivel 1 (Presencia de Medusas SIN Peligro).
 """,
             "HIGH_WARNING": """
 <p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En
-este caso, la especie Rhizostoma pulmo es considerada una especie URTICANTE, y debido a que su abundancia es de categoría 2 (>1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).</p>
+este caso, la especie Rhizostoma pulmo es considerada una especie URTICANTE, y debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).</p>
 """
             }
         },
@@ -97,10 +97,10 @@ la playa, ya que su presencia no representa ningún peligro para los bañistas.<
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Chrysaora hysoscella es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría 1 (<1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Chrysaora hysoscella es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Chrysaora hysoscella es considerada una especie MUY urticante, y debido a que su abundancia es de categoría 2 (>1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Chrysaora hysoscella es considerada una especie MUY urticante, y debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
 """
             },
         },
@@ -127,10 +127,10 @@ la playa, ya que su presencia no representa ningún peligro para los bañistas.<
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Carybdea marsupialis es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría 1 (<1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Carybdea marsupialis es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Carybdea marsupialis es considerada una especie MUY urticante, y debido a que su abundancia es de categoría 3 (>1 individuo / m2), el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Carybdea marsupialis es considerada una especie MUY urticante, y debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
 """,
             },
         },
@@ -156,10 +156,10 @@ la playa, ya que su presencia no representa ningún peligro para los bañistas.<
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Olindias phosphorica es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría 1 (<1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Olindias phosphorica es considerada una especie MUY urticante, pero debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 2 (Presencia de Medusas CON Peligro).
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Olindias phosphorica es considerada una especie MUY urticante, y debido a que su abundancia es de categoría 2 (>1 individuo / 10 m2), el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
+<p>El nivel de peligrosidad de la presencia de medusas en las playas se obtiene a través de un índice que considera la capacidad urticante propia de la especie y su abundancia en las aguas de baño. En este caso, la especie Olindias phosphorica es considerada una especie MUY urticante, y debido a que su abundancia es de categoría %(abundance)i %(abundance_ratio)s, el nivel de peligrosidad específico para este día en esta playa es nivel 3 (Presencia de Medusas ALTO Peligro).</p>
 """
             },
         },

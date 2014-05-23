@@ -11,10 +11,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Pelagia noctiluca és considerada una espècie MOLT urticant, però a causa de que la seva abundància és de categoria 1 (<1 individu / 10 m2), el nivell de perillositat específic per aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Pelagia noctiluca és considerada una espècie MOLT urticant, però a causa de que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Pelagia noctiluca és considerada una espècie MOLT urticant i degut a que la seva abundància és de categoria 2 (>1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Pelagia noctiluca és considerada una espècie MOLT urticant i degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
 """
             },
         },
@@ -27,10 +27,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Rhizostoma pulmo és considerada una espècie URTICANT, però a causa que la seva abundància és de categoria 1 (<1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és de nivell 1 (Presència de Meduses SENSE Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Rhizostoma pulmo és considerada una espècie URTICANT, però a causa que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és de nivell 1 (Presència de Meduses SENSE Perill).</p>
 """,
             "HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Rhizostoma pulmo és considerada una espècie URTICANT, i degut a que la seva abundància és de categoria 2 (>1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Rhizostoma pulmo és considerada una espècie URTICANT, i degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
 """
             }
         },
@@ -95,10 +95,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Chrysaora hysoscella és considerada una espècie MOLT urticant, però a causa de que la seva abundància és de categoria 1 (<1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Chrysaora hysoscella és considerada una espècie MOLT urticant, però a causa de que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Chrysaora hysoscella és considerada una espècie MOLT urticant, i degut a que la seva abundància és de categoria 2 (>1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Chrysaora hysoscella és considerada una espècie MOLT urticant, i degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
 """
             },
         },
@@ -125,10 +125,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Carybdea marsupialis és considerada una espècie MOLT urticant, però degut a que la seva abundància és de categoria 1 (<1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Carybdea marsupialis és considerada una espècie MOLT urticant, però degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Carybdea marsupialis és considerada una espècie MOLT urticant, degut a que la seva abundància és de categoria 2 (>1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses ALT Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Carybdea marsupialis és considerada una espècie MOLT urticant, degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses ALT Perill).</p>
 """,
             },
         },
@@ -154,10 +154,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Olindias phosphorica és considerada una espècie MOLT urticant, però degut a que la seva abundància és de categoria 1 (<1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Olindias phosphorica és considerada una espècie MOLT urticant, però degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 2 (Presència de Meduses AMB Perill).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Olindias phosphorica és considerada una espècie MOLT urticant, i degut a que la seva abundància és de categoria 2 (>1 individu / 10 m2), el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
+<p>El nivell de perillositat de la presència de meduses a les platges s'obté a través d'un índex que considera la capacitat urticant pròpia de l'espècie i la seva abundància a les aigües de bany. En aquest cas, l'espècie Olindias phosphorica és considerada una espècie MOLT urticant, i degut a que la seva abundància és de categoria %(abundance)i %(abundance_ratio)s, el nivell de perillositat específic per a aquest dia en aquesta platja és nivell 3 (Presència de Meduses d’ALT Perill).</p>
 """
             },
         },

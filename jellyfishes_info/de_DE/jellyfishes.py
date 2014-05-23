@@ -12,10 +12,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Pelagia noctiluca ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie 1 (< 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Pelagia noctiluca ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Pelagia noctiluca ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie 2 (> 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Pelagia noctiluca ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
 """
             },
         },
@@ -28,10 +28,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Rhizostoma pulmo ist eine Art mit NESSELGIFT, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie 1 (< 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 1 (Vorhandensein von Quallen OHNE Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Rhizostoma pulmo ist eine Art mit NESSELGIFT, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 1 (Vorhandensein von Quallen OHNE Gefährdung).</p>
 """,
             "HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Rhizostoma pulmo ist eine Art mit NESSELGIFT, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie 2 (> 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Rhizostoma pulmo ist eine Art mit NESSELGIFT, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
 """
             }
         },
@@ -96,10 +96,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Chrysaora hysoscella ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie 1 (< 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Chrysaora hysoscella ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Chrysaora hysoscella ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie 2 (> 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Chrysaora hysoscella ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
 """
             },
         },
@@ -125,10 +125,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Carybdea marsupialis ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie 1 (< 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Carybdea marsupialis ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Carybdea marsupialis ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie 2 (> 1 Tier / 10 m2 diesem), das Gefährdungspotenzial für den heutigen Tag an Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Carybdea marsupialis ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
 """,
             },
         },
@@ -154,10 +154,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Olindias phosphorica ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie 1 (< 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Olindias phosphorica ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie jedoch zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 2 (Vorhandensein von Quallen MIT Gefährdung).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Olindias phosphorica ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie 2 (> 1 Tier / 10 m2), das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
+<p>Das Gefährdungspotenzial von Quallen an Stränden wird mit einem Index angegeben, der sich aus der Gefährdung durch das Nesselgift der Art und ihrem Vorkommen in den Badegewässern ergibt. Die Olindias phosphorica ist eine Art mit VIEL Nesselgift, aufgrund der Menge ihres Auftretens gehört sie zur Kategorie %(abundance)i %(abundance_ratio)s, das Gefährdungspotenzial für den heutigen Tag an diesem Strand beträgt daher Niveau 3 (Vorhandensein von Quallen MIT STARKER Gefährdung).</p>
 """
             },
         },

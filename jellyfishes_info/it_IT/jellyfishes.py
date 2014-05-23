@@ -11,11 +11,11 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Pelagia noctiluca è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria 1 (<1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Pelagia noctiluca è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).
 </p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Pelagia noctiluca è considerata MOLTO urticante e dato che la sua abbondanza è di categoria 2 (>1 esemplare / 10 m2), il livello di pericolosità specifico per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Pelagia noctiluca è considerata MOLTO urticante e dato che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifico per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).
 </p>
 """
             },
@@ -29,10 +29,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Rhizostoma pulmo è considerata URTICANTE, ma visto che la sua abbondanza è di categoria 1 (<1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 1 (Presenza di meduse NON pericolose).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Rhizostoma pulmo è considerata URTICANTE, ma visto che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 1 (Presenza di meduse NON pericolose).</p>
 """,
             "HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Rhizostoma pulmo è considerata URTICANTE, e dato che la sua abbondanza è di categoria 2 (>1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Rhizostoma pulmo è considerata URTICANTE, e dato che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
 """
             }
         },
@@ -97,10 +97,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Chrysaora hysoscella è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria 1 (<1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Chrysaora hysoscella è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Chrysaora hysoscella è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria 2 (>1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Chrysaora hysoscella è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
 """
             },
         },
@@ -126,10 +126,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Carybdea marsupialis è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria 1 (<1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Carybdea marsupialis è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Carybdea marsupialis è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria 2 (>1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Carybdea marsupialis è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
 """,
             },
         },
@@ -155,10 +155,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Olindias phosphorica è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria 1 (<1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Olindias phosphorica è considerata MOLTO urticante, ma visto che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 2 (Presenza di meduse PERICOLOSE).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Olindias phosphorica è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria 2 (>1 esemplare / 10 m2), il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
+<p>Il livello di pericolosità della presenza di meduse sulle spiagge si calcola tramite un indice che prende in considerazione la capacità urticante propria della specie e la sua presenza nelle acque di balneazione. In questo caso, la specie Olindias phosphorica è considerata MOLTO urticante, e dato che la sua abbondanza è di categoria %(abundance)i %(abundance_ratio)s, il livello di pericolosità specifica per questo giorno in questa spiaggia è 3 (Presenza di meduse ALTAMENTE pericolose).</p>
 """
             },
         },

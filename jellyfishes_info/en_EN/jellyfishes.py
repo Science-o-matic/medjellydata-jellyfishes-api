@@ -11,10 +11,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Pelagia noctiluca is considered as HIGH stinging, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Pelagia noctiluca is considered as HIGH stinging, but due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Pelagia noctiluca is considered as HIGH stinging, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Pelagia noctiluca is considered as HIGH stinging, and due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
 """
             },
         },
@@ -27,10 +27,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 1 (Jellyfish Presence with NO risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, but due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 1 (Jellyfish Presence with NO risk)</p>
 """,
             "HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Rhizostoma pulmo is considered as STINGING, and due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
 """
             }
         },
@@ -95,10 +95,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Chrysaora hysoscella is considered as HIGH stinging, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Chrysaora hysoscella is considered as HIGH stinging, but due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Chrysaora hysoscella is considered as HIGH stinging, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Chrysaora hysoscella is considered as HIGH stinging, and due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
 """
             },
         },
@@ -125,10 +125,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Carybdea marsupialis is considered as HIGH stinging, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Carybdea marsupialis is considered as HIGH stinging, but due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Carybdea marsupialis is considered as HIGH stinging, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Carybdea marsupialis is considered as HIGH stinging, and due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
 """,
             },
         },
@@ -154,10 +154,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Olindias phosphorica is considered as HIGH stinging, but due to an abundance category 1 (<1 individual / 10 m2), the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Olindias phosphorica is considered as HIGH stinging, but due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 2 (Jellyfish Presence WITH risk)</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Olindias phosphorica is considered as HIGH stinging, and due to an abundance category 2 (>1 individual / 10 m2), the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
+<p>The risk level of jellyfish presence at the beaches is determined though an index that considers the stinging level of the species and the abundance in bathing waters. In this case, the species Olindias phosphorica is considered as HIGH stinging, and due to an abundance category %(abundance)i %(abundance_ratio)s, the specific risk level for today at this beach is level 3 (Jellyfish Presence with HIGH risk)</p>
 """
             },
         },

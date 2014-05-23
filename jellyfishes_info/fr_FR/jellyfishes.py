@@ -12,10 +12,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Pelagia noctiluca est considérée comme TRÈS urticante, mais du fait que son abondance correspond à la catégorie 1 (<1 individu/10 m2), la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Pelagia noctiluca est considérée comme TRÈS urticante, mais du fait que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Pelagia noctiluca est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 2 (>1 individu/10 m2), la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Pelagia noctiluca est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
 """
             },
         },
@@ -28,10 +28,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "LOW_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Rhizostoma pulmo est considérée comme URTICANTE, mais du fait que son abondance correspond à la catégorie 1 (<1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 1 (Présence de méduses ne représentant PAS DE DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Rhizostoma pulmo est considérée comme URTICANTE, mais du fait que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 1 (Présence de méduses ne représentant PAS DE DANGER).</p>
 """,
             "HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Rhizostoma pulmo est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 2 (>1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Rhizostoma pulmo est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
 """
             }
         },
@@ -96,10 +96,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Chrysaora hysoscella est considérée comme TRÈS urticante, mais du fait que son abondance correspond à la catégorie 1 (<1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, l’espèce Chrysaora hysoscella est considérée comme TRÈS urticante, mais du fait que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Chrysaora hysoscella est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 2 (>1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Chrysaora hysoscella est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
 """
             },
         },
@@ -125,10 +125,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Carybdea marsupialis est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 1 (<1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Carybdea marsupialis est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Carybdea marsupialis est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 2 (>1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Carybdea marsupialis est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
 """,
             },
         },
@@ -154,10 +154,10 @@ JELLYFISHES = {
 """,
         'risk_description': {
             "HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Olindias phosphorica est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 1 (<1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Olindias phosphorica est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 2 (Présence de méduses représentant un DANGER).</p>
 """,
             "VERY_HIGH_WARNING": """
-<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Olindias phosphorica est considérée comme TRÈS urticante et que son abondance correspond à la catégorie 2 (>1 individu/10 m²), la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
+<p>Le niveau de dangerosité de la présence de méduses sur les plages s’obtient à travers un indice basé sur le pouvoir urticant et l’abondance de l’espèce dans les eaux de baignade. Dans ce cas, étant donné que l’espèce Olindias phosphorica est considérée comme TRÈS urticante et que son abondance correspond à la catégorie %(abundance)i %(abundance_ratio)s, la dangerosité spécifique pour cette journée sur cette plage est de niveau 3 (Présence de méduses représentant un DANGER IMPORTANT).</p>
 """
             },
         },

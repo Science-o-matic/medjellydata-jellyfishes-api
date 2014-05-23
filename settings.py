@@ -290,6 +290,44 @@ Nota: Tutte le informazioni sono verificate dall’Istituto di Scienze marine �
 """,
 }
 
+ABUNDANCE_RATIOS = {
+    'es_ES': {
+        1: "(<1 individuo / 10 m2)",
+        2: "(>1 individuo / 10 m2)",
+        3: "(>1 individuo / m2)",
+    },
+    'ca_ES': {
+        1: "(<1 individu / 10 m2)",
+        2: "(>1 individu / 10 m2)",
+        3: "(>1 individu / m2),",
+    },
+    'en_EN': {
+        1: "(<1 individual / 10 m2)",
+        2: "(>1 individual / 10 m2)",
+        3: "(>1 individual / m2)",
+    },
+    'de_DE': {
+        1: "(< 1 Tier / 10 m2)",
+        2: "(> 1 Tier / 10 m2)",
+        3: "(> 1 Tier / m2)",
+    },
+    'fr_FR': {
+        1: "(<1 individu/10 m2)",
+        2: "(>1 individu/10 m2)",
+        3: "(>1 individu/m2)",
+    },
+    'it_IT': {
+        1: "(<1 esemplare / 10 m2)",
+        2: "(>1 esemplare / 10 m2)",
+        3: "(>1 esemplare / m2)",
+    },
+    'ru_RU': {
+        1: "(<1 особь/10 м2)",
+        2: "(>1 особь/10 м2)",
+        3: "(>1 особь/м2)",
+    }
+}
+
 
 try:
     from local_settings import *
