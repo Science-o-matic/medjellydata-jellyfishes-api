@@ -13,13 +13,19 @@ def api(lang, beach):
         abort(404, "Beach %s is not found" % beach)
 
     jellyfishes = []
-    jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
-    for jelly in jellyfishesHazard:
-        jellyfishes.append(jellyfish_info(lang, jelly))
+    #    jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
+    #for jelly in jellyfishesHazard:
+    #    jellyfishes.append(jellyfish_info(lang, jelly))
+    jellyfishes.append(
+        jellyfish_info(lang,
+                       {'jellyFishId': 1,
+                        'status': "HIGH_WARNING",
+                        'abundance': 3,
+                        }))
 
     response.set_header("Access-Control-Allow-Origin", "*")
     return {'jellyfishes': jellyfishes}
 
 
 if __name__ == "__main__":
-    run(host='localhost', app=app, port=8080, debug=True, reloader=True)
+    run(host='localhost', app=app, port=8081, debug=True, reloader=True)
