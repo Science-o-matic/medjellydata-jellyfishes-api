@@ -10,12 +10,23 @@ def api(lang, beach):
     if lang not in settings.LANGUAGES:
         abort(400, "Invalid language code: %s" % lang)
     if beach not in settings.BEACHES:
-        abort(404, "Beach %s is not found" % beach)
+        if beach == "meduses_catalunya":
+            meduses = meduses_catalunya(lang);
+            response.set_header("Access-Control-Allow-Origin", "*")
+            return meduses
+        elif beach == "platjes_catalunya":
+            beaches = beaches_catalunya(lang);
+            response.set_header("Access-Control-Allow-Origin", "*")
+            return beaches
+        else:
+            abort(404, "Beach %s is not found" % beach)
 
     jellyfishes = []
     jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
     for jelly in jellyfishesHazard:
-        jellyfishes.append(jellyfish_info(lang, jelly))
+        aux_jelly = jellyfish_info(lang, jelly)
+        aux_jelly["bloom_probability"] = bloom_probability(settings.BEACHES_TABLES[aux_jelly['scientific_name']],settings.BEACHES[beach])
+        jellyfishes.append(aux_jelly)
 
     response.set_header("Access-Control-Allow-Origin", "*")
     return {'jellyfishes': jellyfishes}

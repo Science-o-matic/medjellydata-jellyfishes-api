@@ -20,3 +20,15 @@ def jellyfishes_by_beach(beach_id, lang):
     r.raise_for_status()
 
     return r.json()["jellyFishesHazard"]
+
+def bloom_probability(table,beach_id):
+    coord = settings.BEACHES_LONG_LAT[beach_id].split(",")
+    sql = "select prob from "+table+" WHERE date = 'NOW()' AND lat="+coord[1]+" AND lon = "+coord[0]+"&api_key="+settings.API_KEY
+    r = requests.get(settings.CARTODB_URL + sql)
+    r.raise_for_status()
+    data = r.json()
+    
+    probability = ""
+    if len(data['rows']) > 0:
+        probability = data['rows'][0]['prob']
+    return probability

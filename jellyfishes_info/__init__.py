@@ -1,5 +1,6 @@
 from importlib import import_module
-from settings import LANGUAGES, RISK_LEVELS, ABUNDANCE_RATIOS
+from settings import LANGUAGES, RISK_LEVELS, ABUNDANCE_RATIOS,CARTODB_URL,API_KEY,BEACHES_LONG_LAT,BEACHES
+import requests
 
 
 JELLYFISHES = {}
@@ -24,3 +25,10 @@ def jellyfish_info(lang, jellyfish):
         "risk_level": RISK_LEVELS[risk_level][lang],
         "description": jelly['description'] + risk_description
     }
+
+def meduses_catalunya(lang):
+    return JELLYFISHES[lang]
+
+def beaches_catalunya(lang):
+    #Here must return cataluña beaches
+    return {"":""}
