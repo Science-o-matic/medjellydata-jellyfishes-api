@@ -30,5 +30,24 @@ def meduses_catalunya(lang):
     return JELLYFISHES[lang]
 
 def beaches_catalunya(lang):
-    #Here must return cataluña beaches
-    return {"":""}
+    beaches = {}
+    today = datetime.date.today()
+    table = 'pred_pelagia'
+    sql = "select prob,lat,lon from "+table+" WHERE date = '"+str(today)+"' &api_key="+API_KEY
+    r = requests.get(CARTODB_URL + sql)
+    r.raise_for_status()
+    data = r.json()
+
+    for i,beach in enumerate(BEACHES):
+        for d in data['rows']:
+            coord = BEACHES_LONG_LAT[BEACHES[beach]].split(",")
+            if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
+                beaches[beach] = {
+                               'jellyfish':{
+                                   'scientific_name':'pelagia',
+                                   'bloom_probability':d['prob']
+                                   }
+                               }
+                break
+
+    return beaches
