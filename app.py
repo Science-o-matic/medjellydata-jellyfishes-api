@@ -1,6 +1,6 @@
 from bottle import template, abort, run, response, Bottle
-from jellyfishes_info import jellyfish_info
-from api import jellyfishes_by_beach
+from jellyfishes_info import jellyfish_info,meduses_catalunya,beaches_catalunya
+from api import jellyfishes_by_beach,bloom_probability
 import settings
 
 app = Bottle()
@@ -25,7 +25,10 @@ def api(lang, beach):
     jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
     for jelly in jellyfishesHazard:
         aux_jelly = jellyfish_info(lang, jelly)
-        aux_jelly["bloom_probability"] = bloom_probability(settings.BEACHES_TABLES[aux_jelly['scientific_name']],settings.BEACHES[beach])
+        probabilities = bloom_probability(settings.BEACHES_TABLES[aux_jelly['scientific_name']],settings.BEACHES[beach])
+        aux_jelly["bloom_today"] = probabilities[0]
+        aux_jelly["bloom_tomorrow"] = probabilities[1]
+        aux_jelly["bloom_after_tomorrow"] = probabilities[2]
         jellyfishes.append(aux_jelly)
 
     response.set_header("Access-Control-Allow-Origin", "*")
