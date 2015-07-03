@@ -27,7 +27,12 @@ def jellyfish_info(lang, jellyfish):
     }
 
 def meduses_catalunya(lang):
-    return JELLYFISHES[lang]
+    jellyfishes_info = {}
+    for beach in (BEACHES):
+        jellyfishes_info[beach] = {'jellyfishes':[]}
+        jellyfishes_info[beach] = {'id_beach':BEACHES[beach]}
+        jellyfishes_info[beach]['jellyfishes'] = jellyfishes_by_beach(BEACHES[beach],lang)
+    return jellyfishes_info
 
 def beaches_catalunya(lang):
     beaches = {}
