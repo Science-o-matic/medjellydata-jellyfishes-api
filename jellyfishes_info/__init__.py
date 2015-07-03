@@ -32,22 +32,30 @@ def meduses_catalunya(lang):
 def beaches_catalunya(lang):
     beaches = {}
     today = datetime.date.today()
+    tomorrow = today + datetime.timedelta(days=1)
+    day_after_tomorrow = today + datetime.timedelta(days=2)
     table = 'pred_pelagia'
-    sql = "select prob,lat,lon from "+table+" WHERE date = '"+str(today)+"' &api_key="+API_KEY
+    sql = "select prob,lat,lon,date from "+table+" WHERE date in( '"+str(today)+"','"+str(tomorrow)+"','"+str(day_after_tomorrow)+"') &api_key="+API_KEY+" ORDER BY date "
     r = requests.get(CARTODB_URL + sql)
     r.raise_for_status()
     data = r.json()
-
+    
     for i,beach in enumerate(BEACHES):
         for d in data['rows']:
             coord = BEACHES_LONG_LAT[BEACHES[beach]].split(",")
-            if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
-                beaches[beach] = {
-                               'jellyfish':{
-                                   'scientific_name':'pelagia',
-                                   'bloom_probability':d['prob']
-                                   }
-                               }
-                break
-
+            d1 = datetime.datetime.strptime(d['date'], '%Y-%m-%dT%H:%M:%SZ')
+            if d1.strftime("%Y-%m-%d") == today.strftime("%Y-%m-%d"):
+                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
+                    beaches[beach] = {'jellyfish':[]}
+                    beaches[beach]['jellyfish'].append({'scientific_name':'pelagia'})
+                    beaches[beach]['jellyfish'].append({'bloom_today':d['prob']})
+            
+            elif d1.strftime("%Y-%m-%d") == tomorrow.strftime("%Y-%m-%d"):
+                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
+                    beaches[beach]['jellyfish'].append({"bloom_tomorrow":d['prob']})
+            
+            elif d1.strftime("%Y-%m-%d") == day_after_tomorrow.strftime("%Y-%m-%d"):
+                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
+                    beaches[beach]['jellyfish'].append({"bloom_after_tomorrow":d['prob']})
+    
     return beaches
