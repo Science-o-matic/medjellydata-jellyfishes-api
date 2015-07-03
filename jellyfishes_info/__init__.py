@@ -1,7 +1,8 @@
 from importlib import import_module
 from settings import LANGUAGES, RISK_LEVELS, ABUNDANCE_RATIOS,CARTODB_URL,API_KEY,BEACHES_LONG_LAT,BEACHES
+from api import jellyfishes_by_beach
 import requests
-
+import datetime
 
 JELLYFISHES = {}
 for lang in LANGUAGES:
