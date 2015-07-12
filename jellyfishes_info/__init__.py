@@ -1,8 +1,9 @@
 from importlib import import_module
 from settings import LANGUAGES, RISK_LEVELS, ABUNDANCE_RATIOS,CARTODB_URL,API_KEY,BEACHES_LONG_LAT,BEACHES
-from api import jellyfishes_by_beach
+from api import jellyfishes_by_beach, pelagia_bloom
 import requests
 import datetime
+import settings
 
 JELLYFISHES = {}
 for lang in LANGUAGES:
@@ -33,7 +34,7 @@ def meduses_catalunya(lang):
         jellyfishes_info.append(JELLYFISHES[lang][jellyfish_id])
     return {'jellyfishes': jellyfishes_info}
 
-def beaches_catalunya(lang):
+def beaches_catalunya(lang, stdout=False):
     beaches = {}
     today = datetime.date.today()
     tomorrow = today + datetime.timedelta(days=1)
@@ -44,22 +45,20 @@ def beaches_catalunya(lang):
     r.raise_for_status()
     data = r.json()
 
-    for i,beach in enumerate(BEACHES):
-        for d in data['rows']:
-            coord = BEACHES_LONG_LAT[BEACHES[beach]].split(",")
-            d1 = datetime.datetime.strptime(d['date'], '%Y-%m-%dT%H:%M:%SZ')
-            if d1.strftime("%Y-%m-%d") == today.strftime("%Y-%m-%d"):
-                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
-                    beaches[beach] = {'jellyfish':[]}
-                    beaches[beach]['jellyfish'].append({'scientific_name':'pelagia'})
-                    beaches[beach]['jellyfish'].append({'bloom_today':d['prob']})
+    for _, beach in enumerate(BEACHES):
+        jellyfishes = []
+        jellyfishesHazard = jellyfishes_by_beach(settings.BEACHES[beach], lang)
+        for jelly in jellyfishesHazard:
+            aux_jelly = jellyfish_info(lang, jelly)
+            pelagia_blooms = pelagia_bloom(settings.BEACHES[beach])
+            if pelagia_blooms:
+                aux_jelly["bloom_today"] = pelagia_blooms[0]
+                aux_jelly["bloom_tomorrow"] = pelagia_blooms[1]
+                aux_jelly["bloom_after_tomorrow"] = pelagia_blooms[2]
+            jellyfishes.append(aux_jelly)
+        beaches[beach] = {"jellyfishes": jellyfishes}
 
-            elif d1.strftime("%Y-%m-%d") == tomorrow.strftime("%Y-%m-%d"):
-                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
-                    beaches[beach]['jellyfish'].append({"bloom_tomorrow":d['prob']})
-
-            elif d1.strftime("%Y-%m-%d") == day_after_tomorrow.strftime("%Y-%m-%d"):
-                if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
-                    beaches[beach]['jellyfish'].append({"bloom_after_tomorrow":d['prob']})
+    if stdout:
+        print beaches
 
     return beaches
