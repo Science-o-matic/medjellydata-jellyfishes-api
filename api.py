@@ -22,12 +22,12 @@ def jellyfishes_by_beach(beach_id, lang):
 
     return r.json()["jellyFishesHazard"]
 
-def bloom_probability(table,beach_id):
+def pelagia_bloom(beach_id):
     today = datetime.date.today()
     tomorrow = today + datetime.timedelta(days=1)
     day_after_tomorrow = today + datetime.timedelta(days=2)
     coord = settings.BEACHES_LONG_LAT[beach_id].split(",")
-    sql = "select prob,date from "+table+" WHERE date in( '"+str(today)+"','"+str(tomorrow)+"','"+str(day_after_tomorrow)+"')AND lat="+coord[1]+" AND lon = "+coord[0]+"&api_key="+settings.API_KEY
+    sql = "select prob,date from pred_pelagia WHERE date in( '"+str(today)+"','"+str(tomorrow)+"','"+str(day_after_tomorrow)+"')AND lat="+coord[1]+" AND lon = "+coord[0]+"&api_key="+settings.API_KEY
     r = requests.get(settings.CARTODB_URL + sql)
     r.raise_for_status()
     data = r.json()
