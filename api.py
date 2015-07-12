@@ -17,7 +17,6 @@ def jellyfishes_by_beach(beach_id, lang):
          })
     headers = {"Authorization": "Basic %s" % AUTH_TOKEN}
 
-    print url
     r = requests.get(url, headers=headers)
     r.raise_for_status()
 
