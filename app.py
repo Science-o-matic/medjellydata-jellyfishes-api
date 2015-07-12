@@ -14,10 +14,6 @@ def api(lang, beach):
             meduses = meduses_catalunya(lang);
             response.set_header("Access-Control-Allow-Origin", "*")
             return meduses
-        elif beach == "platjes_catalunya":
-            beaches = beaches_catalunya(lang);
-            response.set_header("Access-Control-Allow-Origin", "*")
-            return beaches
         else:
             abort(404, "Beach %s is not found" % beach)
 
