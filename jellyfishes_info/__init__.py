@@ -28,12 +28,10 @@ def jellyfish_info(lang, jellyfish):
     }
 
 def meduses_catalunya(lang):
-    jellyfishes_info = {}
-    for beach in (BEACHES):
-        jellyfishes_info[beach] = {'jellyfishes':[]}
-        jellyfishes_info[beach] = {'id_beach':BEACHES[beach]}
-        jellyfishes_info[beach]['jellyfishes'] = jellyfishes_by_beach(BEACHES[beach],lang)
-    return jellyfishes_info
+    jellyfishes_info = []
+    for jellyfish_id in JELLYFISHES[lang]:
+        jellyfishes_info.append(JELLYFISHES[lang][jellyfish_id])
+    return {'jellyfishes': jellyfishes_info}
 
 def beaches_catalunya(lang):
     beaches = {}
@@ -45,7 +43,7 @@ def beaches_catalunya(lang):
     r = requests.get(CARTODB_URL + sql)
     r.raise_for_status()
     data = r.json()
-    
+
     for i,beach in enumerate(BEACHES):
         for d in data['rows']:
             coord = BEACHES_LONG_LAT[BEACHES[beach]].split(",")
@@ -55,13 +53,13 @@ def beaches_catalunya(lang):
                     beaches[beach] = {'jellyfish':[]}
                     beaches[beach]['jellyfish'].append({'scientific_name':'pelagia'})
                     beaches[beach]['jellyfish'].append({'bloom_today':d['prob']})
-            
+
             elif d1.strftime("%Y-%m-%d") == tomorrow.strftime("%Y-%m-%d"):
                 if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
                     beaches[beach]['jellyfish'].append({"bloom_tomorrow":d['prob']})
-            
+
             elif d1.strftime("%Y-%m-%d") == day_after_tomorrow.strftime("%Y-%m-%d"):
                 if (d['lat'] == float(coord[1])) and (d['lon'] == float(coord[0])):
                     beaches[beach]['jellyfish'].append({"bloom_after_tomorrow":d['prob']})
-    
+
     return beaches
