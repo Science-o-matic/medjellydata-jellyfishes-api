@@ -12,7 +12,6 @@ def api(lang, beach):
     if beach not in settings.BEACHES:
         if beach == "meduses_catalunya":
             meduses = meduses_catalunya(lang);
-            response.set_header("Access-Control-Allow-Origin", "*")
             return meduses
         else:
             abort(404, "Beach %s is not found" % beach)
@@ -29,7 +28,6 @@ def api(lang, beach):
             aux_jelly["bloom_after_tomorrow"] = pelagia_blooms[2]
         jellyfishes.append(aux_jelly)
 
-    response.set_header("Access-Control-Allow-Origin", "*")
     return {'jellyfishes': jellyfishes}
 
 

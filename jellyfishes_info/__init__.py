@@ -52,9 +52,18 @@ def beaches_catalunya(lang, stdout=False):
             aux_jelly = jellyfish_info(lang, jelly)
             pelagia_blooms = pelagia_bloom(settings.BEACHES[beach])
             if pelagia_blooms:
-                aux_jelly["bloom_today"] = pelagia_blooms[0]
-                aux_jelly["bloom_tomorrow"] = pelagia_blooms[1]
-                aux_jelly["bloom_after_tomorrow"] = pelagia_blooms[2]
+                try:
+                    aux_jelly["bloom_today"] = pelagia_blooms[0]
+                except IndexError:
+                    aux_jelly["bloom_today"] = "N/A"
+                try:
+                    aux_jelly["bloom_tomorrow"] = pelagia_blooms[1]
+                except IndexError:
+                    aux_jelly["bloom_tomorrow"] = "N/A"
+                try:
+                    aux_jelly["bloom_after_tomorrow"] = pelagia_blooms[2]
+                except IndexError:
+                    aux_jelly["bloom_after_tomorrow"] = "N/A"
             jellyfishes.append(aux_jelly)
         beaches[beach] = {"jellyfishes": jellyfishes}
 
