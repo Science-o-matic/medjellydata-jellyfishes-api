@@ -4,6 +4,7 @@ from api import jellyfishes_by_beach, pelagia_bloom
 import requests
 import datetime
 import settings
+import json
 
 JELLYFISHES = {}
 for lang in LANGUAGES:
@@ -68,6 +69,6 @@ def beaches_catalunya(lang, stdout=False):
         beaches[beach] = {"jellyfishes": jellyfishes}
 
     if stdout:
-        print beaches
+        print json.dumps(beaches)
 
     return beaches
